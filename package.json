@@ -1,0 +1,49 @@
+{
+  "name": "yc-abort",
+  "version": "0.1.0",
+  "description": "Create an asynchronous function that ensures only the last call is executed.",
+  "license": "MIT",
+  "repository": "https://github.com/yichong108/yc-abort",
+  "author": {
+    "name": "yicong",
+    "url": "https://github.com/yichong108"
+  },
+  "keywords": [
+    "abort",
+    "promise",
+    "asynchronous",
+    "last call"
+  ],
+  "cdnUrls": {
+    "umd": "https://unpkg.com/yc-abort@0.1.0/dist/index.js",
+    "esm": "https://cdn.jsdelivr.net/npm/yc-abort@0.1.0/dist/index.js",
+    "umdCjs": "https://unpkg.com/yc-abort@0.1.0/dist/index.umd.cjs"
+  },
+  "type": "module",
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "types": "./lib/main.d.ts",
+  "exports": {
+    "types": "./lib/main.d.ts",
+    "import": "./dist/index.js",
+    "require": "./dist/index.umd.cjs"
+  },
+  "scripts": {
+    "dev": "vite",
+    "test": "vitest",
+    "build": "tsc && vite build",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,html,css,scss}\""
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.10",
+    "prettier": "^3.3.2",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.10",
+    "vitest": "^2.0.2"
+  }
+}
